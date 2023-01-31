@@ -1,0 +1,17 @@
+/* _GlobalPrefix_ */
+"use strict";/*_JS*/
+this.default_r_tvffkgi=this.default_r_tvffkgi||{};(function(_){var window=this;
+/*_M:pm_purview_picker_starred_errors*/
+try{
+_.th("pm_purview_picker_starred_errors");
+var Iyb=function(a){if(a&1){const b=_.Bd();_.H(0,"cfc-message",2)(1,"cfc-message-text");_.O(2,3);_.I();_.H(3,"cfc-message-actions")(4,"button",4);_.P("click",function(){_.r(b);const c=_.Q();return _.w(c.retry())});_.O(5,5);_.I()()()}},Jyb=function(a){if(a&1){const b=_.Bd();_.H(0,"cfc-message",6)(1,"cfc-message-text");_.O(2,7);_.I();_.H(3,"cfc-message-actions")(4,"button",4);_.P("click",function(){_.r(b);const c=_.Q();return _.w(c.dismiss())});_.O(5,8);_.I()()()}},Kyb=class{constructor(a,b){this.cdr=
+a;this.store=b;this.onDestroy=new _.uf;this.showMutateError=this.showFetchError=!1}ngOnInit(){const a=this.store.select(_.xyb,{key:"mutate"}).pipe(_.Bf(this.onDestroy)),b=this.store.select(_.xyb,{key:"fetch"}).pipe(_.Bf(this.onDestroy));_.De([a,b]).subscribe(([c,d])=>{this.showFetchError=d.isActive;this.showMutateError=!this.showFetchError&&c.isActive;this.cdr.markForCheck()})}dismiss(){this.store.dispatch((0,_.pyb)({key:"mutate"}));this.cdr.markForCheck()}retry(){this.store.dispatch((0,_.qyb)());
+this.cdr.markForCheck()}ngOnDestroy(){this.onDestroy.next()}};Kyb.\u0275fac=function(a){return new (a||Kyb)(_.A(_.Nm),_.A(_.Kr))};
+Kyb.\u0275cmp=_.n({type:Kyb,selectors:[["cfc-purview-picker-starred-errors"]],decls:2,vars:2,consts:function(){return[["class"," cfctest-fetch-error-message","type","error",4,"ngIf"],["class"," cfctest-mutate-error-message","type","error",4,"ngIf"],["type","error",1,"cfctest-fetch-error-message"]," Stars are not currently available. ",["mat-button","","color","primary",3,"click"]," Retry ",["type","error",1,"cfctest-mutate-error-message"]," Unable to update stars. Please try again. "," Dismiss "]},
+template:function(a,b){a&1&&(_.R(0,Iyb,6,0,"cfc-message",0),_.R(1,Jyb,6,0,"cfc-message",1));a&2&&(_.F("ngIf",b.showFetchError),_.y(1),_.F("ngIf",b.showMutateError))},dependencies:[_.Um,_.Ju,_.or,_.Iu,_.vq,_.xq,_.wq],encapsulation:2,changeDetection:0});var Lyb=class{};Lyb.\u0275fac=function(a){return new (a||Lyb)};Lyb.\u0275mod=_.q({type:Lyb,id:"pm_purview_picker_starred_errors"});Lyb.\u0275inj=_.k({providers:[{provide:_.Ln,useValue:{PurviewPickerStarredErrors:Kyb}}],imports:[_.cn,_.Mu,_.Eq,_.hx]});
+_.Mf(Lyb,"pm_purview_picker_starred_errors");
+_.uh();
+}catch(e){_._DumpException(e)}
+/* _GlobalSuffix_ */
+}).call(this,this.default_r_tvffkgi);
+// Google Inc.
